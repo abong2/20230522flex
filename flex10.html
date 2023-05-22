@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스연습</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    background: url(images/KakaoTalk_20230519_103007086.jpg);
+    background-size: cover;
+    /* 현재보이는 화면의 높이 */
+    /* 현재보이는 높이가 800px일때 1vp = 8px */
+    min-height: 100vh;
+    /* 현재보이는 화면의 너비 */
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    color: aliceblue;
+    text-align: center;
+}
+.text h1{
+    padding-bottom: 20px;
+}
+.text img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+<body>
+    <div class="wrap">
+        <div class="text">
+            <h1>Welcome!</h1>
+            <div class="images">
+                <img src="images/fatal.jpg" alt="">
+                <img src="images/follow.jpg" alt="">
+                <img src="images/kind.jpg" alt="">
+            </div>
+            <p>100vh and 100vw 를 응용한 문제입니다.</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

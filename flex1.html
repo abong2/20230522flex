@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex연습</title>
+    <style>
+        .container{
+            width: 700px;
+            background-color: antiquewhite;
+            border: 1px solid #222;
+            margin-top: 30px;
+            color: aliceblue;
+            display: flex;
+        }
+        .box{
+            width: 80px;
+            background-color: #222;
+            padding: 5px 45px;
+            margin: 5px;
+        }
+        /* 주축은 가로 , 교차축은 세로 */
+        #opt1{
+            flex-direction: row;  /*왼->오른쪽으로*/
+        }
+        #opt2{
+            flex-direction: row-reverse; /*오른쪽->왼으로*/
+        }
+        #opt3{
+            flex-direction: column; /*위->아래로*/
+        }
+        #opt4{
+            flex-direction: column-reverse; /*아레->위로*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="opt1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+        <div class="container" id="opt2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+        <div class="container" id="opt3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+        <div class="container" id="opt4">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <div class="container" id="opt5">
+        <div class="box"><p>나는</p></div>
+        <div class="box"><p>지금</p></div>
+        <div class="box"><p>집에가고싶다</p></div>
+    </div>
+</body>
+</html>

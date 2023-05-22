@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex연습</title>
+    <style>
+      .container {
+        width: 1000px;
+        height: 150px;
+        background-color: antiquewhite;
+        border: 1px solid #222;
+        margin-top: 30px;
+        color: aliceblue;
+        display: flex;
+      }
+      .box {
+        background-color: #222;
+        padding: 5px 45px;
+        margin: 5px;
+      }
+      /* 교차축 - align-items */
+      #opt1 {
+      align-items: flex-start; /*교차축 시작에붙음 (y축)*/
+      }
+      #opt2 {
+        align-items: flex-end; /*교차축 마지막에붙음 (y축)*/
+      }
+      #opt3 {
+        align-items: center; /*교차축 가운데정랼 (y축)*/
+      }
+      #opt4 {
+        align-items: baseline; /*글자기준 가운데정랼 (y축)*/
+      }
+      #opt5 {
+        align-items: stretch; /*영역안에서 세로방향으로 늘려서 배치 (y축)*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="opt1">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      
+    </div>
+    <div class="container" id="opt2">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      
+    </div>
+    <div class="container" id="opt3">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      
+    </div>
+    <div class="container" id="opt4">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p style="font-size: 14px;">2</p></div>
+      <div class="box"><p style="font-size: 25px;">3</p></div>
+      <div class="box"><p style="font-size: 10px;">4</p></div>
+      
+    </div>
+    <div class="container" id="opt5">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      
+    </div>
+  </body>
+</html>
